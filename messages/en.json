@@ -331,5 +331,92 @@
     "twitterDescription": "Authentic Atreyapuram Pootharekulu from ₹20/piece. Pure ghee, live prep, bulk & stall orders.",
     "ogImageAlt": "Swamy Putharekulu — Atreyapuram Pootharekulu sweets",
     "siteName": "Swamy Putharekulu"
+  },
+  "invoice": {
+    "tag": "BILLING",
+    "title": "Create Invoice",
+    "description": "Fill customer and sweet details on the left. The tax invoice updates live on the right — print or save as PDF from your browser.",
+    "backHome": "Back to site",
+    "reset": "Reset",
+    "print": "Print / Save PDF",
+    "printHint": "Print or Save as PDF",
+    "preview": "Live preview",
+    "taxInvoice": "Tax Invoice",
+    "date": "Date",
+    "billTo": "Bill to",
+    "customerPlaceholder": "Customer name",
+    "orderDetails": "Order details",
+    "orderType": "Order type",
+    "payment": "Payment",
+    "item": "Item",
+    "unit": "Unit",
+    "qty": "Qty",
+    "rate": "Rate",
+    "amount": "Amount",
+    "noItems": "Add sweets to begin this invoice.",
+    "unnamedItem": "Untitled item",
+    "subtotal": "Subtotal",
+    "packaging": "Packaging",
+    "delivery": "Delivery",
+    "discount": "Discount",
+    "grandTotal": "Grand total",
+    "notes": "Notes",
+    "thankYou": "Thank you for choosing Swamy Putharekulu.",
+    "authorisedSignatory": "Authorised Signatory",
+    "addItem": "Add item",
+    "removeItem": "Remove item",
+    "liveTotal": "Invoice total",
+    "sections": {
+      "invoice": "Invoice details",
+      "customer": "Customer",
+      "items": "Sweets & snacks",
+      "charges": "Charges & notes"
+    },
+    "fields": {
+      "invoiceNumber": "Invoice number",
+      "invoiceDate": "Invoice date",
+      "orderType": "Order type",
+      "payment": "Payment method",
+      "customerName": "Customer name",
+      "customerPhone": "Phone",
+      "customerAddress": "Address",
+      "customerCity": "City / town",
+      "customerPincode": "Pincode",
+      "itemName": "Sweet / snack name",
+      "unit": "Unit",
+      "qty": "Quantity",
+      "rate": "Rate (INR)",
+      "packaging": "Packaging (INR)",
+      "delivery": "Delivery (INR)",
+      "discount": "Discount (INR)",
+      "notes": "Notes for customer"
+    },
+    "placeholders": {
+      "customerName": "e.g. Sita Devi / Sri Venkateswara Stores",
+      "customerAddress": "House / street / landmark",
+      "notes": "e.g. Deliver before Sankranti · Gift wrap requested"
+    },
+    "orderTypes": {
+      "counter": "Counter sale",
+      "whatsapp": "WhatsApp order",
+      "stall": "Live stall booking",
+      "bulk": "Bulk / wholesale",
+      "gift": "Gift hamper"
+    },
+    "paymentMethods": {
+      "cash": "Cash",
+      "upi": "UPI",
+      "bank": "Bank transfer",
+      "pending": "Pending"
+    },
+    "units": {
+      "pack": "Pack of 10",
+      "kg": "per kg",
+      "piece": "Piece"
+    },
+    "seo": {
+      "title": "Create Invoice",
+      "description": "Generate a Swamy Putharekulu tax invoice for counter, WhatsApp, stall, or bulk sweet orders."
+    }
   }
 }
