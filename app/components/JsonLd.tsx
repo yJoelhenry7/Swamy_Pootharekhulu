@@ -1,11 +1,11 @@
 import {
   BRAND_NAME,
   GOOGLE_BUSINESS_URL,
+  OG_IMAGE_URL,
   PHONE_TEL,
+  SITE_URL,
   WHATSAPP_NUMBER,
 } from "../utils/brand";
-
-const SITE_URL = "https://www.swamyputharekulu.com";
 
 export default function JsonLd() {
   const structuredData = {
@@ -21,12 +21,12 @@ export default function JsonLd() {
       "Authentic Atreyapuram Pootharekulu — 15 delicious varieties starting from ₹20 per piece. Live hygienic preparation with 100% pure ghee. Serving Andhra Pradesh & Telangana.",
     url: SITE_URL,
     telephone: PHONE_TEL,
-    image: `${SITE_URL}/logo.png`,
+    image: [OG_IMAGE_URL, `${SITE_URL}/logo.png`],
     logo: {
       "@type": "ImageObject",
       url: `${SITE_URL}/logo.png`,
-      width: "512",
-      height: "512",
+      width: "500",
+      height: "500",
     },
     address: {
       "@type": "PostalAddress",
