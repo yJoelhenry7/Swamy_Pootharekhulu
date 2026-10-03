@@ -1,0 +1,324 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "features": "Features",
+    "occasions": "Occasions",
+    "contact": "Contact",
+    "orderNow": "Order Now",
+    "cart": "Cart",
+    "founders": "Founders",
+    "location": "Location"
+  },
+  "hero": {
+    "tagline": "ATREYAPURAM'S GOLDEN LEAF POOTHAREKULU",
+    "title": "Swamy Putharekulu",
+    "subtitle": "Authentic taste of Atreyapuram",
+    "legacy": "30 Years of Legacy",
+    "legacyQuote": "Three decades of Atreyapuram tradition — paper-thin Pootharekulu crafted with pure ghee, hygiene, and heart. Freshly prepared for every taste and every budget.",
+    "description": "Enjoy the authentic taste of Atreyapuram Pootharekulu — freshly prepared by trained experts with the highest standards of hygiene, quality, and taste. 15 delicious varieties starting from just ₹20 per piece.",
+    "exploreButton": "Explore Sweets",
+    "orderButton": "Order Now",
+    "varieties": "15+ Varieties",
+    "pureFresh": "Pure Ghee",
+    "customers": "From ₹20 / piece",
+    "worldwideShipping": "Serving Andhra Pradesh & Telangana",
+    "prevSweet": "Previous sweet",
+    "nextSweet": "Next sweet"
+  },
+  "products": {
+    "sectionTag": "OUR DELICACIES",
+    "title": "Our Products",
+    "description": "Explore our handcrafted collection of authentic Atreyapuram Pootharekulu and traditional sweets & hot snacks — recipes passed down through generations.",
+    "categoryAll": "All",
+    "categoryClassic": "Classic",
+    "categoryPremium": "Premium",
+    "categorySpecial": "Special",
+    "categoryPutharekulu": "Putharekulu",
+    "categorySweets & Hot": "Sweets & Hot",
+    "categorySweetsAndHot": "Sweets & Hot",
+    "orderButton": "Order on WhatsApp",
+    "addToCart": "Add to Cart",
+    "viewCart": "View Cart",
+    "added": "Added!",
+    "adding": "Adding...",
+    "bulkOrderText": "Looking for bulk orders, live stall bookings or custom varieties? We're here to help!",
+    "catalogButton": "View Full Catalog on WhatsApp",
+    "pack": "Pack of 10 pieces",
+    "perKg": "per kg",
+    "traditional": {
+      "name": "Traditional Pootharekulu",
+      "description": "Classic paper-thin rice wafers with pure jaggery & ghee"
+    },
+    "karampodi": {
+      "name": "Karampodi Pootharekulu",
+      "description": "Premium pootharekulu filled with spicy karampodi"
+    },
+    "chocolate": {
+      "name": "Chocolate Pootharekulu",
+      "description": "Modern fusion with rich dark chocolate filling"
+    },
+    "jaggeryDryFruits": {
+      "name": "Jaggery Dry Fruits Pootharekulu",
+      "description": "Traditional recipe with organic jaggery & dry fruits"
+    },
+    "sugarDryFruits": {
+      "name": "Sugar Dry Fruits Pootharekulu",
+      "description": "Classic pootharekulu with pure sugar & dry fruits"
+    },
+    "kova": {
+      "name": "Kova Pootharekulu",
+      "description": "Rich pootharekulu with creamy milk kova filling"
+    },
+    "samosa": {
+      "name": "Samosa Pootharekulu",
+      "description": "Savory pootharekulu with spicy samosa filling"
+    },
+    "horlicksBoost": {
+      "name": "Horlicks & Boost Pootharekulu",
+      "description": "Nutritious pootharekulu with Horlicks & Boost filling"
+    },
+    "sugarFree": {
+      "name": "Sugar Free Pootharekulu",
+      "description": "Diabetic-friendly pootharekulu with sugar alternatives"
+    },
+    "bellamKommulu": {
+      "name": "Bellam Kommulu",
+      "description": "Traditional jaggery-coated puffed rice snack - sweet & crispy per kg"
+    },
+    "chegodilu": {
+      "name": "Chegodilu",
+      "description": "Crunchy ring-shaped savory snack made with rice flour - per kg"
+    },
+    "bellamBoondi": {
+      "name": "Bellam Boondi",
+      "description": "Sweet jaggery boondi - tiny, crispy, and delicious per kg"
+    },
+    "karamVerusenagalu": {
+      "name": "Karam Verusenagalu",
+      "description": "Spicy fried peanuts with chili powder - perfect hot snack per kg"
+    },
+    "bellamMukkalu": {
+      "name": "Bellam Mukkalu",
+      "description": "Traditional jaggery pieces - pure and natural sweetness per kg"
+    },
+    "atukuluMixture": {
+      "name": "Atukulu Mixture",
+      "description": "Crispy flattened rice mixture with spices and nuts per kg"
+    },
+    "janthikalu": {
+      "name": "Janthikalu",
+      "description": "Crunchy spiral-shaped savory snack - perfect tea-time treat per kg"
+    },
+    "masalaMixture": {
+      "name": "Masala Mixture",
+      "description": "Spicy and crunchy savory mixture with aromatic masala per kg"
+    },
+    "masalaPapad": {
+      "name": "Masala Papad",
+      "description": "Crispy spiced papad - instant snack delight per kg"
+    },
+    "ringGavvalu": {
+      "name": "Ring Gavvalu",
+      "description": "Ring-shaped crunchy snack made with rice flour per kg"
+    },
+    "sannaSev": {
+      "name": "Sanna Sev",
+      "description": "Fine thread-like crispy sev - delicate and tasty per kg"
+    },
+    "thokkuduLaddu": {
+      "name": "Thokkudu Laddu",
+      "description": "Traditional crispy layered laddu - sweet and crunchy per kg"
+    },
+    "verusenagaUndalu": {
+      "name": "Verusenaga Undalu",
+      "description": "Peanut sweet balls with jaggery - crunchy and wholesome per kg"
+    }
+  },
+  "about": {
+    "tag": "OUR STORY",
+    "title": "Authentic Taste of Atreyapuram",
+    "story": "At Swamy Putharekulu, we bring you Atreyapuram's Golden Leaf Pootharekulu — prepared fresh by trained experts, following the highest standards of hygiene, quality, and taste. Specially crafted for every palate and every budget, with 15 delicious varieties starting from just ₹20 per piece.",
+    "handcrafted": "Hygienic Live Preparation",
+    "handcraftedDesc": "Freshly prepared in front of you with clean, trusted practices",
+    "certified": "FSSAI & MSME Certified",
+    "certifiedDesc": "FSSAI certified seller and MSME certified company you can trust",
+    "celebrating": "15 Delicious Varieties",
+    "premiumIngredients": "100% Pure Ghee",
+    "premiumIngredientsDesc": "Made with 100% pure ghee and quality ingredients for authentic taste",
+    "passion": "Trained Professional Team",
+    "passionDesc": "Medically certified, trained staff dedicated to quality and service",
+    "heritage": "Golden Leaf Heritage",
+    "whyChooseUs": "Why Choose Us"
+  },
+  "footer": {
+    "tagline": "Authentic taste of Atreyapuram — hygienic live preparation with pure ghee",
+    "quickLinks": "Quick Links",
+    "products": "Our Products",
+    "contactUs": "Contact Us",
+    "location": "Atreyapuram, Andhra Pradesh",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved.",
+    "brand": "Swamy Putharekulu",
+    "brandSubtitle": "Atreyapuram's Golden Leaf Pootharekulu",
+    "deliveryLine": "Serving Andhra Pradesh & Telangana",
+    "orderWhatsApp": "Order on WhatsApp",
+    "madeWith": "Made with",
+    "madeIn": "in Atreyapuram, AP"
+  },
+  "features": {
+    "tag": "WHY WE STAND OUT",
+    "title": "Quality You Can Trust",
+    "description": "From hygienic live preparation to FSSAI & MSME certification — every detail is crafted for authentic Atreyapuram taste.",
+    "orderButton": "Order Your Favorites Now",
+    "sankrantiTitle": "15 Authentic Varieties",
+    "sankrantiDesc": "15 varieties of authentic & delicious Pootharekulu",
+    "birthdayTitle": "Hygienic Live Preparation",
+    "birthdayDesc": "Freshly prepared with the highest hygiene standards",
+    "weddingTitle": "Medically Certified Staff",
+    "weddingDesc": "Trained, professional & medically certified team",
+    "corporateTitle": "FSSAI & MSME Certified",
+    "corporateDesc": "Certified seller and company you can trust",
+    "festivalTitle": "100% Pure Ghee",
+    "festivalDesc": "Quality ingredients & authentic taste",
+    "templeTitle": "Affordable for Every Budget",
+    "templeDesc": "Starting from just ₹20 per piece",
+    "fastDeliveryTitle": "Fast & Reliable Service",
+    "fastDeliveryDesc": "Punctual service you can count on",
+    "premiumQualityTitle": "Authentic Taste",
+    "premiumQualityDesc": "The real taste of Atreyapuram Pootharekulu",
+    "customOrdersTitle": "AP & Telangana Coverage",
+    "customOrdersDesc": "Services available across both states"
+  },
+  "contact": {
+    "tag": "GET IN TOUCH",
+    "title": "Order Now",
+    "description": "Ready to experience the authentic taste of Andhra? Contact us through WhatsApp for quick orders and inquiries.",
+    "whatsappTitle": "Order via WhatsApp",
+    "whatsappDesc": "Browse our catalog, place your order, and make payment directly through WhatsApp Business. It's quick, easy, and secure!",
+    "whatsappButton": "Open WhatsApp Catalog",
+    "otherWays": "Other Ways to Reach Us",
+    "contactLine": "Contact: Swamy Putharekulu | Bulk orders & live stall bookings",
+    "availableHours": "Available: Mon-Sat, 9 AM - 8 PM",
+    "callUs": "Call Us",
+    "emailUs": "Email Us",
+    "visitUs": "Visit Us",
+    "locationDetail": "Atreyapuram, Andhra Pradesh",
+    "instantResponse": "Instant Response",
+    "securePayment": "Secure Payment",
+    "easyTracking": "Easy Tracking",
+    "chatSupport": "Chat Support",
+    "operatingHours": "Operating Hours",
+    "mondaySaturday": "Monday - Saturday:",
+    "hours": "9:00 AM - 8:00 PM",
+    "sunday": "Sunday:",
+    "closed": "Closed",
+    "howToOrder": "How to Order?",
+    "step1Title": "Click WhatsApp",
+    "step1Desc": "Open our catalog on WhatsApp",
+    "step2Title": "Select Items",
+    "step2Desc": "Choose your favorite sweets",
+    "step3Title": "Pay & Enjoy",
+    "step3Desc": "Make payment and we'll deliver",
+    "whatsappMessage": "Hello! I'm interested in ordering from Swamy Putharekulu (Atreyapuram's Golden Leaf Pootharekulu).",
+    "bulkCta": "For bulk orders, live stall bookings & other details:"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your Cart is Empty",
+    "emptyDesc": "Looks like you haven't added any items to your cart yet.",
+    "continueShopping": "Continue Shopping",
+    "orderSummary": "Order Summary",
+    "item": "item",
+    "items": "{count, plural, =1 {1 item} other {# items}}",
+    "quantity": "Quantity",
+    "price": "Price",
+    "remove": "Remove",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "checkout": "Checkout via WhatsApp",
+    "deliveryTitle": "Delivery Details",
+    "deliveryDesc": "Please provide your delivery information",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "Enter your full name",
+    "fullNameRequired": "Full name is required",
+    "phone": "Phone Number",
+    "phonePlaceholder": "+91 98765 43210",
+    "phoneRequired": "Phone number is required",
+    "phoneInvalid": "Please enter a valid phone number",
+    "address": "Delivery Address",
+    "addressPlaceholder": "Enter your complete address",
+    "addressRequired": "Delivery address is required",
+    "city": "City / State",
+    "cityPlaceholder": "Enter city and state",
+    "cityRequired": "City/State is required",
+    "pincode": "Pincode",
+    "pincodePlaceholder": "Enter 6-digit pincode",
+    "pincodeRequired": "Pincode is required",
+    "pincodeInvalid": "Please enter a valid 6-digit pincode",
+    "landmark": "Landmark (Optional)",
+    "landmarkPlaceholder": "Nearby landmark or reference point",
+    "useCurrentLocation": "Use Current Location",
+    "gettingLocation": "Getting Location...",
+    "yourDeliveryLocation": "Your delivery location",
+    "geoNotSupported": "Geolocation is not supported by your browser",
+    "geoError": "Unable to retrieve your location. Please enter address manually."
+  },
+  "offers": {
+    "tag": "SPECIAL OFFERINGS",
+    "title": "Gift & Corporate Orders",
+    "description": "Make your celebrations memorable with our specially curated gift hampers and corporate gifting solutions.",
+    "giftHampers": "Gift Hampers",
+    "giftHampersDesc": "Build your own hamper - choose up to 5 of each item",
+    "giftHampersHint": "Customizable packs with premium packaging. Select quantities for each item (0-5):",
+    "dryFruitPutharekulu": "Dry Fruit Pootharekulu",
+    "kova": "Kova Pootharekulu",
+    "chocolate": "Chocolate Pootharekulu",
+    "boost": "Boost Pootharekulu",
+    "samosa": "Samosa Pootharekulu",
+    "featurePackaging": "Premium packaging",
+    "featureGreeting": "Greeting cards included",
+    "featureCustom": "Customizable selection",
+    "orderHamper": "Order Custom Hamper on WhatsApp",
+    "corporateTitle": "Corporate Gifting",
+    "corporateDesc": "Bulk orders for corporate events, festivals, and celebrations",
+    "corpFeature1": "Minimum 50 packs",
+    "corpFeature2": "Company branding option",
+    "corpFeature3": "Timely delivery",
+    "startingFrom": "Starting from",
+    "inquire": "Inquire on WhatsApp",
+    "packagingTitle": "Premium Packaging",
+    "packagingDesc": "Elegant boxes with traditional designs",
+    "panIndiaTitle": "AP & Telangana Delivery",
+    "panIndiaDesc": "Services available across Andhra Pradesh & Telangana",
+    "supportTitle": "24/7 Support",
+    "supportDesc": "Quick responses on WhatsApp",
+    "internationalOrders": "Orders Across AP & Telangana",
+    "worldwideDelivery": "Serving Andhra Pradesh & Telangana — Swamy Putharekulu",
+    "whatsappHeader": "Hello! I'd like to order a custom Gift Hamper from Swamy Putharekulu:",
+    "whatsappSelection": "GIFT HAMPER - CUSTOM SELECTION:",
+    "whatsappEmpty": "No items selected yet",
+    "whatsappFooter": "Please share pricing and delivery details. Thank you!"
+  },
+  "founders": {
+    "tag": "OUR FOUNDERS",
+    "title": "The People Behind the Golden Leaf",
+    "description": "Swamy Putharekulu is built on a passion for preserving Atreyapuram's authentic Pootharekulu tradition — with hygiene, quality, and heartfelt service.",
+    "founder1Name": "Swamy",
+    "founder1Role": "Founder",
+    "founder1Bio": "Founder of Swamy Putharekulu, bringing Atreyapuram's Golden Leaf Pootharekulu to families across Andhra Pradesh and Telangana with live hygienic preparation and pure ghee recipes.",
+    "founder2Name": "Golden Leaf Team",
+    "founder2Role": "Operations & Craft",
+    "founder2Bio": "A medically certified, professionally trained team dedicated to FSSAI standards, live stall excellence, and the authentic taste of Atreyapuram.",
+    "highlight": "Bulk orders, live stall bookings & custom varieties welcome"
+  },
+  "location": {
+    "tag": "FIND US",
+    "title": "Visit Us on Google Maps",
+    "description": "Find Swamy Putharekulu on Google Maps — get directions, read reviews, and check live stall details.",
+    "openMaps": "Open Google Maps",
+    "callUs": "Call Now",
+    "addressLabel": "Atreyapuram, Andhra Pradesh"
+  }
+}

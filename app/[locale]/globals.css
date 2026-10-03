@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  /* Cream + antique brass (no orange) — burgundy aliases kept for shared class names */
+  --burgundy-50: #fffdf7;
+  --burgundy-100: #faf3e4;
+  --burgundy-200: #f0e2c4;
+  --burgundy-300: #e0c98a;
+  --burgundy-400: #d4af37;
+  --burgundy-500: #c4a032;
+  --burgundy-600: #a88428;
+  --burgundy-700: #8a6b1f;
+  --burgundy-800: #6b5318;
+  --burgundy-900: #4a3910;
+  --maroon: #5c4528;
+  --gold-50: #fffdf7;
+  --gold-100: #faf3e4;
+  --gold-200: #f0e2c4;
+  --gold-300: #e0c98a;
+  --gold-400: #d4af37;
+  --gold-500: #c4a032;
+  --gold-600: #a88428;
+  --gold-700: #8a6b1f;
+  --gold-800: #6b5318;
+  --gold-900: #4a3910;
+  --gold: #c9a84c;
+  --bronze: #8a6b1f;
+  --deep: #3d2e1a;
+  --deep-soft: #5c4528;
+  --cream: #fffaf0;
+  --ivory: #f7f0e4;
+  --ink: #2c2416;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-burgundy-50: var(--burgundy-50);
+  --color-burgundy-100: var(--burgundy-100);
+  --color-burgundy-200: var(--burgundy-200);
+  --color-burgundy-300: var(--burgundy-300);
+  --color-burgundy-400: var(--burgundy-400);
+  --color-burgundy-500: var(--burgundy-500);
+  --color-burgundy-600: var(--burgundy-600);
+  --color-burgundy-700: var(--burgundy-700);
+  --color-burgundy-800: var(--burgundy-800);
+  --color-burgundy-900: var(--burgundy-900);
+  --color-maroon: var(--maroon);
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-800: var(--gold-800);
+  --color-gold-900: var(--gold-900);
+  --color-gold: var(--gold);
+  --color-bronze: var(--bronze);
+  --color-deep: var(--deep);
+  --color-deep-soft: var(--deep-soft);
+  --color-cream: var(--cream);
+  --color-ivory: var(--ivory);
+  --color-ink: var(--ink);
+  --font-sans: var(--font-body), var(--font-telugu), ui-sans-serif, sans-serif;
+  --font-serif: var(--font-display), var(--font-telugu), ui-serif, Georgia, serif;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(212, 175, 55, 0.12), transparent 28%),
+    radial-gradient(circle at 88% 82%, rgba(146, 101, 10, 0.08), transparent 32%),
+    linear-gradient(180deg, #fffdf7 0%, #fffaf0 45%, #f8edd4 100%);
+  color: var(--foreground);
+  font-family: var(--font-body), var(--font-telugu), ui-sans-serif, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-display), var(--font-telugu), ui-serif, Georgia, serif;
+  letter-spacing: 0.015em;
+  font-weight: 600;
+}
+
+html {
+  scroll-behavior: smooth;
+}

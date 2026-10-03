@@ -1,0 +1,33 @@
+{
+  "name": "Swamy Putharekulu",
+  "short_name": "Swamy Putharekulu",
+  "description": "Authentic Atreyapuram's Golden Leaf Pootharekulu — 15 varieties from ₹20/piece. Live hygienic preparation with pure ghee.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#d4af37",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["food", "shopping", "lifestyle"],
+  "lang": "en-IN",
+  "dir": "ltr",
+  "scope": "/"
+}
