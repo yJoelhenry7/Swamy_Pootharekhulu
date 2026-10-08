@@ -17,6 +17,10 @@ export const VAISHNAVITE_EMBLEM_SRC =
 export const STAFF_1_SRC = "/Staff%201.jpeg";
 export const STAFF_2_SRC = "/Staff%202.jpeg";
 export const SHOP_IMAGE_SRC = "/Shop%20Image.jpeg";
-/** 1200x630 share preview for WhatsApp / Facebook / Twitter */
-export const OG_IMAGE_PATH = "/og-share.png";
+/** 1200x630 share preview for WhatsApp / Facebook / Twitter — bump ?v= after replacing the file */
+export const OG_IMAGE_VERSION = "20261009";
+export const OG_IMAGE_PATH = `/og-share.png?v=${OG_IMAGE_VERSION}`;
 export const OG_IMAGE_URL = `${SITE_URL}${OG_IMAGE_PATH}`;
+export const OG_IMAGE_WIDTH = 1200;
+export const OG_IMAGE_HEIGHT = 630;
+export const OG_IMAGE_TYPE = "image/png";

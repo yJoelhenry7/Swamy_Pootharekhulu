@@ -3,7 +3,8 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import FolkSectionBackground from "../../components/FolkSectionBackground";
 import InvoiceWorkspace from "../../components/invoice/InvoiceWorkspace";
-import { BRAND_NAME, SITE_URL } from "../../utils/brand";
+import { BRAND_NAME, OG_IMAGE_URL, SITE_URL } from "../../utils/brand";
+import { buildOgImage } from "../../utils/seo";
 import enMessages from "../../../messages/en.json";
 import teMessages from "../../../messages/te.json";
 
@@ -15,6 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
   const seo =
     locale === "te" ? teMessages.invoice.seo : enMessages.invoice.seo;
+  const siteSeo = locale === "te" ? teMessages.seo : enMessages.seo;
 
   return {
     title: seo.title,
@@ -28,6 +30,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: seo.description,
       url: `${SITE_URL}/${locale}/invoice`,
       siteName: BRAND_NAME,
+      images: [buildOgImage(siteSeo.ogImageAlt)],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: seo.title,
+      description: seo.description,
+      images: [OG_IMAGE_URL],
     },
   };
 }

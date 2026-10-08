@@ -13,7 +13,11 @@ Disallow: /*/invoice
 # Allow product & share images for previews
 Allow: /products/
 Allow: /og-share.png
+Allow: /og-share.png?*
 Allow: /logo.png
+Allow: /Shop Image.jpeg
+Allow: /Staff 1.jpeg
+Allow: /Staff 2.jpeg
 Allow: /*.png
 Allow: /*.jpg
 Allow: /*.jpeg

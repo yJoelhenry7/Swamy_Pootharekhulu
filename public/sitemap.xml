@@ -1,58 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://www.swamyputharekulu.com/en</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.swamyputharekulu.com/en" />
     <xhtml:link rel="alternate" hreflang="te" href="https://www.swamyputharekulu.com/te" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.swamyputharekulu.com/en" />
+    <image:image>
+      <image:loc>https://www.swamyputharekulu.com/og-share.png</image:loc>
+      <image:title>Swamy Putharekulu — Atreyapuram Pootharekulu</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://www.swamyputharekulu.com/te</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.swamyputharekulu.com/en" />
     <xhtml:link rel="alternate" hreflang="te" href="https://www.swamyputharekulu.com/te" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.swamyputharekulu.com/en" />
+    <image:image>
+      <image:loc>https://www.swamyputharekulu.com/og-share.png</image:loc>
+      <image:title>స్వామి పూతరేకులు</image:title>
+    </image:image>
   </url>
 
   <url>
     <loc>https://www.swamyputharekulu.com/en#products</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://www.swamyputharekulu.com/en#about</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.swamyputharekulu.com/en#founders</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
     <loc>https://www.swamyputharekulu.com/en#location</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://www.swamyputharekulu.com/en#contact</loc>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
