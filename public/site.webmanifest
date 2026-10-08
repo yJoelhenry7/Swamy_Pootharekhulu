@@ -14,9 +14,16 @@
   "categories": ["food", "shopping", "lifestyle"],
   "icons": [
     {
-      "src": "/favicon.ico",
+      "src": "/logo.png",
+      "sizes": "500x500",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
       "sizes": "48x48",
-      "type": "image/x-icon"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "/apple-touch-icon.png",
@@ -25,16 +32,9 @@
       "purpose": "any"
     },
     {
-      "src": "/logo.png",
-      "sizes": "500x500",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/og-share.png",
-      "sizes": "1200x630",
-      "type": "image/png",
-      "purpose": "any"
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
     }
   ],
   "screenshots": [

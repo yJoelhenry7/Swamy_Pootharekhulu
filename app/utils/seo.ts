@@ -115,8 +115,9 @@ export function buildSiteMetadata(
     },
     icons: {
       icon: [
-        { url: "/favicon.ico", sizes: "any" },
         { url: "/logo.png", type: "image/png", sizes: "500x500" },
+        { url: "/favicon.png", type: "image/png", sizes: "48x48" },
+        { url: "/favicon.ico", sizes: "any" },
       ],
       apple: [
         { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
