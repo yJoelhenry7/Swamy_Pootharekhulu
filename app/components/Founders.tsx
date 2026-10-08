@@ -9,11 +9,25 @@ import {
   HiOutlineShieldCheck,
 } from "react-icons/hi2";
 import FolkSectionBackground from "./FolkSectionBackground";
+import { STAFF_1_SRC, STAFF_2_SRC } from "../utils/brand";
 
 export default function Founders() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.15 });
   const t = useTranslations("founders");
+
+  const staffPhotos = [
+    {
+      src: STAFF_1_SRC,
+      alt: t("staff1Caption"),
+      caption: t("staff1Caption"),
+    },
+    {
+      src: STAFF_2_SRC,
+      alt: t("staff2Caption"),
+      caption: t("staff2Caption"),
+    },
+  ];
 
   return (
     <section
@@ -46,8 +60,7 @@ export default function Founders() {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] gap-10 lg:gap-14 items-center max-w-6xl mx-auto mb-12">
-          {/* Founder portrait */}
+        <div className="grid lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] gap-10 lg:gap-14 items-center max-w-6xl mx-auto mb-14">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -74,7 +87,6 @@ export default function Founders() {
             </div>
           </motion.div>
 
-          {/* Founder + team copy */}
           <div className="space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -119,10 +131,47 @@ export default function Founders() {
           </div>
         </div>
 
+        {/* Staff photos */}
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.25 }}
+          className="max-w-6xl mx-auto mb-12"
+        >
+          <h3 className="mb-6 text-center font-serif text-2xl md:text-3xl font-semibold text-[var(--deep)]">
+            {t("staffGalleryTitle")}
+          </h3>
+          <div className="grid gap-5 sm:grid-cols-2">
+            {staffPhotos.map((photo, index) => (
+              <motion.figure
+                key={photo.src}
+                initial={{ opacity: 0, y: 20 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.55, delay: 0.3 + index * 0.1 }}
+                className="overflow-hidden rounded-[1.5rem] border border-[var(--bronze)]/25 bg-white/80 shadow-[0_16px_36px_rgba(61,46,26,0.12)]"
+              >
+                <div className="relative aspect-[4/3] w-full">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    fill
+                    className="object-cover object-center"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    unoptimized
+                  />
+                </div>
+                <figcaption className="px-4 py-3 text-center text-sm font-medium text-[var(--ink)]/70 sm:px-5 sm:py-4 sm:text-base">
+                  {photo.caption}
+                </figcaption>
+              </motion.figure>
+            ))}
+          </div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.35 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
           className="text-center"
         >
           <div className="inline-flex items-center gap-3 rounded-full border border-[var(--bronze)]/35 bg-[var(--ivory)] px-6 py-3 font-semibold text-[var(--deep)]">

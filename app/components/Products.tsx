@@ -21,23 +21,19 @@ export default function Products() {
   const { items, addToCart, updateQuantity, removeFromCart } = useCart();
 
   const products = [
+    // Putharekulu — flagship → classics → premium sweets → savory → special
     {
-      id: "karampodi",
+      id: "bellamOrganicDryFruits",
       category: "Premium",
-      image: "/products/putharekulu/karampodi_putharekhulu.png",
-      price: "₹300",
-    },
-    {
-      id: "chocolate",
-      category: "Premium",
-      image: "/products/putharekulu/choclate_putharekhulu.png",
-      price: "₹450",
+      image: "/products/putharekulu/SSP_Bellam_organic_dry_fruits_Putharekulu.png",
+      price: "₹500",
+      packKey: "pack12" as const,
     },
     {
       id: "jaggeryDryFruits",
       category: "Classic",
       image: "/products/putharekulu/bellam_dry_fruits_putharekhulu.png",
-      price: "₹300",
+      price: "₹200",
     },
     {
       id: "sugarDryFruits",
@@ -46,15 +42,15 @@ export default function Products() {
       price: "₹250",
     },
     {
-      id: "kova",
+      id: "chocolate",
       category: "Premium",
-      image: "/products/putharekulu/kova_putharekhulu.png?v=20261003",
+      image: "/products/putharekulu/choclate_putharekhulu.png",
       price: "₹450",
     },
     {
-      id: "samosa",
+      id: "kova",
       category: "Premium",
-      image: "/products/putharekulu/samosa_putharekhulu.png",
+      image: "/products/putharekulu/kova_putharekhulu.png",
       price: "₹450",
     },
     {
@@ -64,22 +60,34 @@ export default function Products() {
       price: "₹450",
     },
     {
+      id: "karampodi",
+      category: "Premium",
+      image: "/products/putharekulu/karampodi_putharekhulu.png",
+      price: "₹300",
+    },
+    {
+      id: "samosa",
+      category: "Premium",
+      image: "/products/putharekulu/samosa_putharekhulu.png",
+      price: "₹450",
+    },
+    {
       id: "sugarFree",
       category: "Special",
       image: "/products/putharekulu/diet_sugar_putharekhulu.png",
       price: "₹500",
     },
-    // Sweets & Hot Category
+    // Sweets & Hot — sweets first, then savory/hot (paths match public/products/sweets and hot)
+    {
+      id: "organicBellamGavvalu",
+      category: "Sweets & Hot",
+      image: "/products/sweets and hot/Organic_Bellam_gavalu.png",
+      price: "₹350",
+    },
     {
       id: "bellamKommulu",
       category: "Sweets & Hot",
-      image: "/products/sweets and hot/bellam kommulu.jpg",
-      price: "₹450",
-    },
-    {
-      id: "chegodilu",
-      category: "Sweets & Hot",
-      image: "/products/sweets and hot/chegodilu.jpg",
+      image: "/products/sweets and hot/bellam_kommulu.png",
       price: "₹450",
     },
     {
@@ -89,63 +97,81 @@ export default function Products() {
       price: "₹450",
     },
     {
-      id: "karamVerusenagalu",
-      category: "Sweets & Hot",
-      image: "/products/sweets and hot/Karam Verusenagalu.jpg",
-      price: "₹450",
-    },
-    {
       id: "bellamMukkalu",
       category: "Sweets & Hot",
       image: "/products/sweets and hot/Bellam Mukkalu.png",
       price: "₹350",
     },
     {
-      id: "atukuluMixture",
+      id: "sunnundalu",
       category: "Sweets & Hot",
-      image: "/products/sweets and hot/Atukulu Mixture.jpg",
+      image: "/products/sweets and hot/sunnundalu.png",
+      price: "₹450",
+    },
+    {
+      id: "nuvulaVundalu",
+      category: "Sweets & Hot",
+      image: "/products/sweets and hot/Nuvula_vundalu.png",
       price: "₹350",
     },
     {
-      id: "janthikalu",
+      id: "verusenagaUndalu",
       category: "Sweets & Hot",
-      image: "/products/sweets and hot/janthikalu.jpg",
+      image: "/products/sweets and hot/Verusenaga_Undalu.png",
+      price: "₹350",
+    },
+    {
+      id: "atchu",
+      category: "Sweets & Hot",
+      image: "/products/sweets and hot/Atchu.png",
+      price: "₹350",
+    },
+    {
+      id: "chegodilu",
+      category: "Sweets & Hot",
+      image: "/products/sweets and hot/chegodilu.png",
+      price: "₹450",
+    },
+    {
+      id: "karamVerusenagalu",
+      category: "Sweets & Hot",
+      image: "/products/sweets and hot/Karam Verusenagalu.png",
+      price: "₹450",
+    },
+    {
+      id: "karamMixture",
+      category: "Sweets & Hot",
+      image: "/products/sweets and hot/Karam Mixture.png",
       price: "₹350",
     },
     {
       id: "masalaMixture",
       category: "Sweets & Hot",
-      image: "/products/sweets and hot/Masala Mixture.jpg",
+      image: "/products/sweets and hot/Masala_Mixture.png",
+      price: "₹350",
+    },
+    {
+      id: "atukuluMixture",
+      category: "Sweets & Hot",
+      image: "/products/sweets and hot/Atukulu Mixture.png",
+      price: "₹350",
+    },
+    {
+      id: "janthikalu",
+      category: "Sweets & Hot",
+      image: "/products/sweets and hot/janthikalu.png",
       price: "₹350",
     },
     {
       id: "masalaPapad",
       category: "Sweets & Hot",
-      image: "/products/sweets and hot/Masala Papad.jpg",
-      price: "₹350",
-    },
-    {
-      id: "ringGavvalu",
-      category: "Sweets & Hot",
-      image: "/products/sweets and hot/Ring Gavvalu.png",
+      image: "/products/sweets and hot/Masala Papad.png",
       price: "₹350",
     },
     {
       id: "sannaSev",
       category: "Sweets & Hot",
-      image: "/products/sweets and hot/Sanna Sev.jpg",
-      price: "₹350",
-    },
-    {
-      id: "thokkuduLaddu",
-      category: "Sweets & Hot",
-      image: "/products/sweets and hot/sunnundalu.jpg",
-      price: "₹450",
-    },
-    {
-      id: "verusenagaUndalu",
-      category: "Sweets & Hot",
-      image: "/products/sweets and hot/Verusenaga_Undalu.jpg",
+      image: "/products/sweets and hot/Sanna Sev.png",
       price: "₹350",
     },
   ];
@@ -259,13 +285,13 @@ export default function Products() {
           <motion.div
             whileHover={{ y: -6, scale: 1.02 }}
             transition={{ duration: 0.35 }}
-            className="relative mx-auto aspect-square w-full overflow-hidden rounded-full border-[3px] border-[var(--gold)]/55 bg-gradient-to-b from-[#fffdf8] to-[#f3e8cf] shadow-[0_14px_34px_rgba(61,46,26,0.12)]"
+            className="relative mx-auto aspect-square w-full overflow-hidden rounded-full border-[3px] border-[var(--gold)]/55 bg-[#fffdf8] shadow-[0_14px_34px_rgba(61,46,26,0.12)]"
           >
             <Image
               src={product.image}
               alt={getProductName(product.id)}
               fill
-              className="object-contain object-center p-2"
+              className="object-cover object-center scale-[1.06]"
               sizes="240px"
               unoptimized
             />
@@ -287,7 +313,13 @@ export default function Products() {
             {product.price}
           </p>
           <p className="text-xs text-[var(--ink)]/50">
-            {product.category === "Sweets & Hot" ? t("perKg") : t("pack")}
+            {product.category === "Sweets & Hot"
+              ? t("perKg")
+              : t(
+                  "packKey" in product && product.packKey
+                    ? product.packKey
+                    : "pack"
+                )}
           </p>
         </div>
 

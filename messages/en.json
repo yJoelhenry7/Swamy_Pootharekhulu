@@ -46,10 +46,15 @@
     "bulkOrderText": "Looking for bulk orders, live stall bookings or custom varieties? We're here to help!",
     "catalogButton": "View Full Catalog on WhatsApp",
     "pack": "Pack of 10 pieces",
+    "pack12": "Pack of 12 pieces",
     "perKg": "per kg",
     "traditional": {
       "name": "Traditional Pootharekulu",
       "description": "Classic paper-thin rice wafers with pure jaggery & ghee"
+    },
+    "bellamOrganicDryFruits": {
+      "name": "Bellam Organic Dry Fruits Pootharekulu",
+      "description": "Premium Atreyapuram pootharekulu with organic jaggery and rich dry fruits"
     },
     "karampodi": {
       "name": "Karampodi Pootharekulu",
@@ -83,6 +88,10 @@
       "name": "Sugar Free Pootharekulu",
       "description": "Diabetic-friendly pootharekulu with sugar alternatives"
     },
+    "organicBellamGavvalu": {
+      "name": "Organic Bellam Gavvalu",
+      "description": "Shell-shaped rice flour sweets coated in organic jaggery syrup - per kg"
+    },
     "bellamKommulu": {
       "name": "Bellam Kommulu",
       "description": "Traditional jaggery-coated puffed rice snack - sweet & crispy per kg"
@@ -102,6 +111,22 @@
     "bellamMukkalu": {
       "name": "Bellam Mukkalu",
       "description": "Traditional jaggery pieces - pure and natural sweetness per kg"
+    },
+    "sunnundalu": {
+      "name": "Sunnundalu",
+      "description": "Traditional roasted urad dal laddus - wholesome and classic per kg"
+    },
+    "nuvulaVundalu": {
+      "name": "Nuvula Vundalu",
+      "description": "Sesame seed sweet balls with jaggery - nutty and wholesome per kg"
+    },
+    "atchu": {
+      "name": "Atchu",
+      "description": "Crunchy peanut clusters bound with jaggery - traditional sweet snack per kg"
+    },
+    "karamMixture": {
+      "name": "Karam Mixture",
+      "description": "Spicy hot mixture with sev, peanuts and curry leaves - per kg"
     },
     "atukuluMixture": {
       "name": "Atukulu Mixture",
@@ -126,10 +151,6 @@
     "sannaSev": {
       "name": "Sanna Sev",
       "description": "Fine thread-like crispy sev - delicate and tasty per kg"
-    },
-    "thokkuduLaddu": {
-      "name": "Thokkudu Laddu",
-      "description": "Traditional crispy layered laddu - sweet and crunchy per kg"
     },
     "verusenagaUndalu": {
       "name": "Verusenaga Undalu",
@@ -311,12 +332,16 @@
     "founder2Name": "Golden Leaf Team",
     "founder2Role": "Operations & Craft",
     "founder2Bio": "A medically certified, professionally trained team dedicated to FSSAI standards, live stall excellence, and the authentic taste of Atreyapuram.",
+    "staffGalleryTitle": "Our Hygienic Kitchen Team",
+    "staff1Caption": "Live preparation with pure ghee — trained, masked & gloved",
+    "staff2Caption": "From wafer sheets to finished packs — crafted fresh every day",
     "highlight": "Bulk orders, live stall bookings & custom varieties welcome"
   },
   "location": {
     "tag": "FIND US",
     "title": "Visit Us on Google Maps",
     "description": "Find Swamy Putharekulu on Google Maps — get directions, read reviews, and check live stall details.",
+    "shopCaption": "Our Atreyapuram shop — Swamy Putharekulu",
     "openMaps": "Open Google Maps",
     "callUs": "Call Now",
     "addressLabel": "Atreyapuram, Andhra Pradesh"

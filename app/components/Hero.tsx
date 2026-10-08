@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import FolkSectionBackground from "./FolkSectionBackground";
+import { VAISHNAVITE_EMBLEM_SRC } from "../utils/brand";
 
 function useIsCompact() {
   const [compact, setCompact] = useState(false);
@@ -24,9 +25,9 @@ function useIsCompact() {
 
 const HERO_SWEETS: { key: string; src: string; nameKey: string }[] = [
   {
-    key: "chocolate",
-    src: "/products/putharekulu/choclate_putharekhulu.png",
-    nameKey: "chocolate.name",
+    key: "organicDry",
+    src: "/products/putharekulu/SSP_Bellam_organic_dry_fruits_Putharekulu.png",
+    nameKey: "bellamOrganicDryFruits.name",
   },
   {
     key: "dryFruit",
@@ -34,9 +35,24 @@ const HERO_SWEETS: { key: string; src: string; nameKey: string }[] = [
     nameKey: "jaggeryDryFruits.name",
   },
   {
+    key: "sugarDry",
+    src: "/products/putharekulu/sugar_dry_fruits_putharekhulu.png",
+    nameKey: "sugarDryFruits.name",
+  },
+  {
+    key: "chocolate",
+    src: "/products/putharekulu/choclate_putharekhulu.png",
+    nameKey: "chocolate.name",
+  },
+  {
     key: "kova",
-    src: "/products/putharekulu/kova_putharekhulu.png?v=20261003",
+    src: "/products/putharekulu/kova_putharekhulu.png",
     nameKey: "kova.name",
+  },
+  {
+    key: "boost",
+    src: "/products/putharekulu/horlicks_and_boost_putharekhulu.png",
+    nameKey: "horlicksBoost.name",
   },
   {
     key: "karampodi",
@@ -52,16 +68,6 @@ const HERO_SWEETS: { key: string; src: string; nameKey: string }[] = [
     key: "sugarFree",
     src: "/products/putharekulu/diet_sugar_putharekhulu.png",
     nameKey: "sugarFree.name",
-  },
-  {
-    key: "boost",
-    src: "/products/putharekulu/horlicks_and_boost_putharekhulu.png",
-    nameKey: "horlicksBoost.name",
-  },
-  {
-    key: "sugarDry",
-    src: "/products/putharekulu/sugar_dry_fruits_putharekhulu.png",
-    nameKey: "sugarDryFruits.name",
   },
 ];
 
@@ -120,16 +126,42 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[100svh] flex items-center overflow-hidden pt-24 pb-12 md:pt-28 md:pb-16"
+      className="relative flex min-h-[100svh] flex-col overflow-hidden pt-24 pb-12 md:pt-28 md:pb-16"
     >
       <FolkSectionBackground variant="gold" />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-8 px-4 sm:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-6 lg:px-8 xl:gap-10">
+      {/* Sri Venkateswara emblem — shankh, namam, chakra — top center before hero */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.94 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+        className="relative z-10 mx-auto flex w-full shrink-0 justify-center px-4 pt-1 sm:px-6 lg:px-8"
+      >
+        <div className="relative flex items-center justify-center">
+          <div
+            className="pointer-events-none absolute inset-[-20%] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(201,168,76,0.28)_0%,rgba(201,168,76,0.08)_50%,transparent_72%)]"
+            aria-hidden="true"
+          />
+          <div className="relative h-16 w-[13.5rem] sm:h-[4.75rem] sm:w-[16.5rem] md:h-20 md:w-[20rem]">
+            <Image
+              src={VAISHNAVITE_EMBLEM_SRC}
+              alt="Sri Venkateswara Swamy — shankh, namam, and sudarshana chakra"
+              fill
+              className="object-contain object-center"
+              sizes="(max-width: 640px) 216px, (max-width: 768px) 264px, 320px"
+              priority
+              unoptimized
+            />
+          </div>
+        </div>
+      </motion.div>
+
+      <div className="relative z-10 mx-auto grid w-full max-w-7xl flex-1 items-center gap-8 px-4 pt-5 sm:px-6 sm:pt-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)] lg:gap-6 lg:px-8 xl:gap-10">
         {/* Left — brand + legacy */}
         <motion.div
           initial={{ opacity: 0, x: -36 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
           className="order-1 text-center lg:text-left"
         >
           <span className="mb-4 inline-block rounded-full border border-[var(--bronze)]/40 bg-[var(--ivory)]/70 px-5 py-2 font-sans text-xs font-semibold tracking-[0.16em] text-[var(--deep)] sm:text-sm">

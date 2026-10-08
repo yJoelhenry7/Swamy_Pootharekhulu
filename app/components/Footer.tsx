@@ -28,8 +28,8 @@ export default function Footer() {
   ];
 
   const popularSweets = [
-    tProducts('traditional.name'),
-    tProducts('karampodi.name'),
+    tProducts('bellamOrganicDryFruits.name'),
+    tProducts('jaggeryDryFruits.name'),
     tProducts('chocolate.name'),
     tProducts('kova.name'),
     tProducts('sugarFree.name'),

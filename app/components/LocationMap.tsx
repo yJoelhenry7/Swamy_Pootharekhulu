@@ -2,6 +2,7 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { FaMapMarkerAlt, FaPhone, FaExternalLinkAlt } from "react-icons/fa";
 import {
@@ -10,12 +11,13 @@ import {
   MAP_EMBED_URL,
   PHONE_DISPLAY,
   PHONE_TEL,
+  SHOP_IMAGE_SRC,
 } from "../utils/brand";
 import FolkSectionBackground from "./FolkSectionBackground";
 
 export default function LocationMap() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.15 });
   const t = useTranslations("location");
 
   return (
@@ -49,50 +51,78 @@ export default function LocationMap() {
           </p>
         </motion.div>
 
+        <div className="grid gap-6 lg:grid-cols-2 lg:gap-8 mb-6">
+          <motion.figure
+            initial={{ opacity: 0, y: 32 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.75, delay: 0.1 }}
+            className="overflow-hidden rounded-3xl border border-[var(--gold)]/30 bg-white shadow-xl"
+          >
+            <div className="relative aspect-[4/3] w-full md:aspect-[16/11]">
+              <Image
+                src={SHOP_IMAGE_SRC}
+                alt={t("shopCaption")}
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                unoptimized
+              />
+            </div>
+            <figcaption className="px-5 py-4 text-center font-medium text-[var(--maroon)]">
+              {t("shopCaption")}
+            </figcaption>
+          </motion.figure>
+
+          <motion.div
+            initial={{ opacity: 0, y: 32 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.75, delay: 0.18 }}
+            className="overflow-hidden rounded-3xl border border-[var(--gold)]/30 bg-white shadow-xl"
+          >
+            <div className="relative w-full h-full min-h-[280px] md:min-h-[320px]">
+              <iframe
+                title={`${BRAND_NAME} map`}
+                src={MAP_EMBED_URL}
+                className="absolute inset-0 w-full h-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            </div>
+          </motion.div>
+        </div>
+
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.8, delay: 0.15 }}
-          className="rounded-3xl overflow-hidden shadow-2xl border border-[var(--gold)]/30 bg-white"
+          transition={{ duration: 0.7, delay: 0.25 }}
+          className="rounded-3xl border border-[var(--gold)]/30 bg-white p-6 md:p-8 shadow-xl flex flex-col md:flex-row md:items-center md:justify-between gap-6"
         >
-          <div className="relative w-full h-[360px] md:h-[480px]">
-            <iframe
-              title={`${BRAND_NAME} map`}
-              src={MAP_EMBED_URL}
-              className="absolute inset-0 w-full h-full border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              allowFullScreen
-            />
+          <div className="flex items-start gap-3 text-[var(--maroon)]">
+            <FaMapMarkerAlt className="w-6 h-6 text-[var(--gold)] mt-1 flex-shrink-0" />
+            <div>
+              <p className="font-bold text-lg">{BRAND_NAME}</p>
+              <p className="text-gray-700">{t("addressLabel")}</p>
+            </div>
           </div>
 
-          <div className="p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-            <div className="flex items-start gap-3 text-[var(--maroon)]">
-              <FaMapMarkerAlt className="w-6 h-6 text-[var(--gold)] mt-1 flex-shrink-0" />
-              <div>
-                <p className="font-bold text-lg">{BRAND_NAME}</p>
-                <p className="text-gray-700">{t("addressLabel")}</p>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href={GOOGLE_BUSINESS_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[var(--gold)] text-white px-6 py-3 rounded-full font-semibold hover:bg-[var(--gold-600)] transition-all shadow-md"
-              >
-                <FaExternalLinkAlt className="w-4 h-4" />
-                {t("openMaps")}
-              </a>
-              <a
-                href={`tel:${PHONE_TEL}`}
-                className="inline-flex items-center justify-center gap-2 bg-white text-[var(--maroon)] border-2 border-[var(--gold)] px-6 py-3 rounded-full font-semibold hover:bg-[var(--gold-50)] transition-all"
-              >
-                <FaPhone className="w-4 h-4" />
-                {t("callUs")} · {PHONE_DISPLAY}
-              </a>
-            </div>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <a
+              href={GOOGLE_BUSINESS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 bg-[var(--gold)] text-white px-6 py-3 rounded-full font-semibold hover:bg-[var(--gold-600)] transition-all shadow-md"
+            >
+              <FaExternalLinkAlt className="w-4 h-4" />
+              {t("openMaps")}
+            </a>
+            <a
+              href={`tel:${PHONE_TEL}`}
+              className="inline-flex items-center justify-center gap-2 bg-white text-[var(--maroon)] border-2 border-[var(--gold)] px-6 py-3 rounded-full font-semibold hover:bg-[var(--gold-50)] transition-all"
+            >
+              <FaPhone className="w-4 h-4" />
+              {t("callUs")} · {PHONE_DISPLAY}
+            </a>
           </div>
         </motion.div>
       </div>
