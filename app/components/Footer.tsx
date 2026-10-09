@@ -29,10 +29,10 @@ export default function Footer() {
 
   const popularSweets = [
     tProducts('bellamOrganicDryFruits.name'),
+    tProducts('bellamDryFruitsSp.name'),
     tProducts('jaggeryDryFruits.name'),
     tProducts('chocolate.name'),
     tProducts('kova.name'),
-    tProducts('sugarFree.name'),
   ];
 
   return (

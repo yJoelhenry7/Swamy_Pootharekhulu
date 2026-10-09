@@ -53,8 +53,12 @@
       "description": "Classic paper-thin rice wafers with pure jaggery & ghee"
     },
     "bellamOrganicDryFruits": {
-      "name": "Bellam Organic Dry Fruits Pootharekulu",
-      "description": "Premium Atreyapuram pootharekulu with organic jaggery and rich dry fruits"
+      "name": "Bellam Organic Dry Fruits Pootharekulu (SSP)",
+      "description": "SSP premium pack — organic jaggery & rich dry fruits, pack of 12"
+    },
+    "bellamDryFruitsSp": {
+      "name": "Bellam Dry Fruits Pootharekulu (SP)",
+      "description": "SP variant — jaggery & dry fruits pootharekulu, pack of 10"
     },
     "karampodi": {
       "name": "Karampodi Pootharekulu",
@@ -65,8 +69,8 @@
       "description": "Modern fusion with rich dark chocolate filling"
     },
     "jaggeryDryFruits": {
-      "name": "Jaggery Dry Fruits Pootharekulu",
-      "description": "Traditional recipe with organic jaggery & dry fruits"
+      "name": "Bellam Dry Fruits Pootharekulu (Classic)",
+      "description": "Classic variant — traditional jaggery & dry fruits, pack of 10"
     },
     "sugarDryFruits": {
       "name": "Sugar Dry Fruits Pootharekulu",

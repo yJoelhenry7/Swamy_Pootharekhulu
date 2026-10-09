@@ -30,6 +30,11 @@ const HERO_SWEETS: { key: string; src: string; nameKey: string }[] = [
     nameKey: "bellamOrganicDryFruits.name",
   },
   {
+    key: "dryFruitSp",
+    src: "/products/putharekulu/bellam_dry_fruits_putharekhulu.png",
+    nameKey: "bellamDryFruitsSp.name",
+  },
+  {
     key: "dryFruit",
     src: "/products/putharekulu/bellam_dry_fruits_putharekhulu.png",
     nameKey: "jaggeryDryFruits.name",

@@ -21,13 +21,19 @@ export default function Products() {
   const { items, addToCart, updateQuantity, removeFromCart } = useCart();
 
   const products = [
-    // Putharekulu — flagship → classics → premium sweets → savory → special
+    // Putharekulu — SSP → SP → Classic → other varieties
     {
       id: "bellamOrganicDryFruits",
       category: "Premium",
       image: "/products/putharekulu/SSP_Bellam_organic_dry_fruits_Putharekulu.png",
       price: "₹500",
       packKey: "pack12" as const,
+    },
+    {
+      id: "bellamDryFruitsSp",
+      category: "Premium",
+      image: "/products/putharekulu/bellam_dry_fruits_putharekhulu.png",
+      price: "₹350",
     },
     {
       id: "jaggeryDryFruits",
