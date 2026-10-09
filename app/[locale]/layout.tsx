@@ -6,7 +6,14 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { CartProvider } from "../context/CartContext";
-import { OG_IMAGE_URL } from "../utils/brand";
+import {
+  BRAND_NAME,
+  OG_IMAGE_HEIGHT,
+  OG_IMAGE_TYPE,
+  OG_IMAGE_URL,
+  OG_IMAGE_WIDTH,
+  SITE_URL,
+} from "../utils/brand";
 import { buildSiteMetadata } from "../utils/seo";
 import enMessages from "../../messages/en.json";
 import teMessages from "../../messages/te.json";
@@ -81,10 +88,19 @@ export default async function RootLayout({
       className={`${display.variable} ${sans.variable} ${telugu.variable} h-full antialiased`}
     >
       <head>
-        {/* WhatsApp / crawler-friendly absolute image hint */}
+        {/* Explicit absolute OG tags — WhatsApp uses these for link thumbnails */}
         <link rel="image_src" href={OG_IMAGE_URL} />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content={BRAND_NAME} />
+        <meta property="og:url" content={`${SITE_URL}/${locale}`} />
         <meta property="og:image" content={OG_IMAGE_URL} />
         <meta property="og:image:secure_url" content={OG_IMAGE_URL} />
+        <meta property="og:image:type" content={OG_IMAGE_TYPE} />
+        <meta property="og:image:width" content={String(OG_IMAGE_WIDTH)} />
+        <meta property="og:image:height" content={String(OG_IMAGE_HEIGHT)} />
+        <meta property="og:image:alt" content={`${BRAND_NAME} — Atreyapuram Pootharekulu`} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={OG_IMAGE_URL} />
         <JsonLd />
       </head>
       <body className="min-h-full flex flex-col">

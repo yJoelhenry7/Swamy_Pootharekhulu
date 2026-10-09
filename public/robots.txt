@@ -12,6 +12,7 @@ Disallow: /*/invoice
 
 # Allow product & share images for previews
 Allow: /products/
+Allow: /og-share.jpg
 Allow: /og-share.png
 Allow: /og-share.png?*
 Allow: /logo.png

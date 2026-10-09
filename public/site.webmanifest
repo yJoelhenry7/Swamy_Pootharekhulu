@@ -39,9 +39,9 @@
   ],
   "screenshots": [
     {
-      "src": "/og-share.png",
+      "src": "/og-share.jpg",
       "sizes": "1200x630",
-      "type": "image/png",
+      "type": "image/jpeg",
       "form_factor": "wide",
       "label": "Swamy Putharekulu share preview"
     }
